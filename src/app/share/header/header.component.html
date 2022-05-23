@@ -1,0 +1,98 @@
+<section class="header ">
+    <div class="topbar">
+    <div class="socialicons container">
+        <div class="row">
+            <div class="col-6">
+                <div class="social-icon px-4 mx-4 d-flex align-self-md-center justify-item-center">
+                <!-- <ul class="list-group-horizontal d-flex align-self-md-center px=3"> -->
+                    <a href="#"><i class="fa-brands fa-twitter px-2 "></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook px-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus px-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest px-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-dribbble px-2"></i></a>
+                  <!-- </ul> -->
+                 </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="contact d-flex ">
+                        <div class="col-4">
+                            <i class="fa-solid fa-phone px-2"></i> 
+                            <a href="tel:555-666-7777">555-666-7777</a>
+                         </div>
+                        <div class="col-5">
+                            <i class="fa-solid fa-envelope px-2"></i>                           
+                            <a href="mailto:contact@construction.com">contact@construction.com</a>
+  
+                        </div>
+                        <div class="col-3">
+                                <i class="fa-solid fa-clock px-2" ><span id="time">Mon-Fri: 7:00 - 17:00
+                                </span></i>
+                                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+<!-- <p-menubar [model]="items" id="menubar">
+    <div>
+        <input type="text" pInputText placeholder="Search">
+        <button type="button" pButton label="Logout" icon="pi pi-power-off" style="margin-left:.25em"></button>
+    </div> -->
+<!-- </p-menubar> -->
+
+</section>
+
+
+  <!--  -->
+  <div class="nav1">
+  <nav class="navbar navbar-expand-lg  ">
+  <div class="container-fluid">
+    <a class="navbar-brand "  href="#"><img src="../../../assets/logo-light.png" alt=""></a>
+    <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex=justify-item-center " id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <!-- <li class="nav-item">
+          <a class="nav-link active px-20" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item px-20">
+          <a class="nav-link " href="#">Features</a>
+        </li>
+        <li class="nav-item px-20">
+          <a class="nav-link" href="#">Pricing</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLink="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{hmedata[0]}}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+            <li><a class="dropdown-item" routerLink="home/aboutus">{{items1[0].subheaderName}}</a></li>
+            <li><a class="dropdown-item" routerLink="home/futureworks">{{items1[1].subheaderName}}</a></li>
+            <li><a class="dropdown-item" routerLink="home/offers">{{items1[2].subheaderName}}</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{hmedata[1]}}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" routerLink="services/">{{items2[0].subheaderName}}</a></li>
+              <li><a class="dropdown-item" routerLink="services/reconstruction-servise">{{items2[1].subheaderName}}</a></li>
+              <li><a class="dropdown-item" routerLink="services/offers">{{items2[2].subheaderName}}</a></li>
+              <li><a class="dropdown-item" routerLink="services/offers">{{items2[3].subheaderName}}</a></li>
+              <li><a class="dropdown-item" routerLink="services/offers">{{items2[4].subheaderName}}</a></li>
+              <li><a class="dropdown-item" routerLink="services/offers">{{items2[5].subheaderName}}</a></li>
+              <!-- <li><a class="dropdown-item" routerLink="home/offers">{{items2[2].subheaderName}}</a></li> -->
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>

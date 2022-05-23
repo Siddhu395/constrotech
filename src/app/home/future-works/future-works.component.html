@@ -1,0 +1,19 @@
+ <table class="table">
+  <thead>
+    <tr >
+      
+      <th >First</th>
+      <th >Last</th>
+      <th >role</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr *ngFor="let dt of user">
+      <td>{{dt.fname}}</td>
+      <td>{{dt.lname}}</td>
+      <td>{{dt.role}}</td>
+    </tr>
+    
+  </tbody>
+</table>

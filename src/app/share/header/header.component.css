@@ -1,0 +1,41 @@
+#time{
+    font-size: 11px;
+}
+.topbar{
+    background-color: #355157;
+    color: white;
+}
+.p-menubar {
+    display: flex;
+    align-items: center;
+    background-color: red
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 5pc;
+    padding-left: 6pc;
+    /* margin: auto; */
+    marker-start: 50px;
+    margin: 5px;
+    /* background-color: #355157; */
+   
+}
+.nav1{
+    background-color: #355157 !important
+}
+.nav1 a{
+    color: white ;
+    /* background-color: #355157 !important */
+    
+}
+.dropdown-menu li a{
+    color: black;
+}
+.carousel-inner img{
+    height: 500px !important;
+}
+.carousel-item > div {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }

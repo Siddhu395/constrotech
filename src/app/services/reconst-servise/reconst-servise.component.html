@@ -1,0 +1,141 @@
+<div class="container">
+
+    <div class="row height d-flex justify-content-center align-items-center">
+
+      <div class="col-md-8">
+
+        <div class="search">
+          <i class="fa fa-search"></i>
+          <input type="text" class="form-control" placeholder="search city here" [(ngModel)]="filterText">
+          <button class="btn btn-primary">Search</button>
+        </div>
+        
+      </div>
+      
+    </div>
+</div>
+<input type="text" [(ngModel)]="filterText">
+<select name="" id=""[(ngModel)]="selectrole" (change)="selectedvalue()">
+    <option value="pune" >pune</option>
+    <option value="mumbai">mumbai</option>
+
+</select>
+
+
+<!-- <ng-container *ngFor="let dt of user | filter:filterText">
+<div class="container">
+    <div class="">
+        
+        <div class="">
+            
+                <div class="">
+                   <div class="">
+                        <img src={{dt.img}} alt="">
+                   </div>
+                   <div class="">
+                        <h6 style="color: red;" >{{dt.name}}</h6>
+                   </div>
+                   
+                </div>
+                
+
+                
+            
+            <div>
+                <table>
+                    <tr>
+                        <th>Total_project</th>
+                        <td>{{dt.Total_project}}</td>
+                    </tr> 
+                    <tr>  
+                        <th>Under construction project</th>
+                        <td>{{dt.under_const_project}}</td>
+                    </tr>
+                    <tr>
+                        <th> New Project</th>
+                        <td>{{dt.new_project}}</td>
+                    </tr>
+                    <tr>
+                    
+                        <th>Completed Project</th>
+                        <td>{{dt.complete_project}}</td>
+                    </tr>
+                    <tr>
+                            <th>Ready to move Project</th>
+                         <td>{{dt.redy_project}}</td>
+                    </tr>
+                    <tr>
+                       <th>Upcoming Project</th>
+                        <td>{{dt.upcoming_project}}</td>
+                    </tr>
+                    <tr>
+                        <th>Experience</th>
+                        <td>{{dt.experience}}</td>
+                    </tr>
+                </table>
+            </div>
+        
+        </div>
+    
+    </div>
+</div>
+</ng-container> -->
+<!-- <ng-container> -->
+    <!-- </ng-container>     -->
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let dt of user | filter:filterText||selectrole">
+        <div class="card col-4">
+            
+                <div class="row">
+                   <div class="col-5">
+                        <img src={{dt.img}} alt="">
+                   </div>
+                   <div class="col-6">
+                        <h6 style="color: red;">{{dt.name}}</h6>
+                   </div>
+                   
+                </div>
+                
+
+                
+            
+            <div>
+                <table>
+                    <tr>
+                        <th>Total_project</th>
+                        <td>{{dt.Total_project}}</td>
+                    </tr> 
+                    <tr>  
+                        <th>Under construction project</th>
+                        <td>{{dt.under_const_project}}</td>
+                    </tr>
+                    <tr>
+                        <th> New Project</th>
+                        <td>{{dt.new_project}}</td>
+                    </tr>
+                    <tr>
+                    
+                        <th>Completed Project</th>
+                        <td>{{dt.complete_project}}</td>
+                    </tr>
+                    <tr>
+                            <th>Ready to move Project</th>
+                         <td>{{dt.redy_project}}</td>
+                    </tr>
+                    <tr>
+                       <th>Upcoming Project</th>
+                        <td>{{dt.upcoming_project}}</td>
+                    </tr>
+                    <tr>
+                        <th>Experience</th>
+                        <td>{{dt.experience}}</td>
+                    </tr>
+                </table>
+            </div>
+        
+        </div>
+    </ng-container>
+    </div>
+</div>
